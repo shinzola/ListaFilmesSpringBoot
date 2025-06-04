@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Filmes Para Assistir</title">
+    <meta name="Author" content="Rodrigo Noelli Duarte">
+    <meta name="Author2" content="Pedro Coelho">
+    <meta name="Author3" content="Marcos Di Pardi">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meus Filmes Para Assistir</h1>
+
+      <div class="form-container">
+        <h2>Adicionar Novo Filme / Editar Filme</h2>
+        <form id="filmeForm">
+          <input type="hidden" id="id" />
+
+          <div class="form-group">
+            <label for="titulo">Título:</label>
+            <input type="text" id="nome" name="titulo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ano">Ano de Lançamento:</label>
+            <input type="number" id="ano" name="ano" required />
+          </div>
+
+          <div class="form-group">
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero" required />
+          </div>
+
+          <button type="submit" class="btn-submit">Salvar Filme</button>
+        </form>
+      </div>
+
+      <div class="lista-filmes-container" id="filmes">
+        <h2>Lista de Filmes</h2>
+        <ul id="listaFilmes"></ul>
+        <p id="mensagemListaVazia" class="mensagem-lista-vazia">
+          Nenhum filme cadastrado ainda.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
